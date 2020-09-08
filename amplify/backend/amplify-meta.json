@@ -1,26 +1,36 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-authcra-dev-141406-authRole",
-            "UnauthRoleArn": "arn:aws:iam::041414866712:role/amplify-authcra-dev-141406-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::041414866712:role/amplify-authcra-dev-141406-authRole",
-            "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-authcra-dev-141406-deployment",
-            "UnauthRoleName": "amplify-authcra-dev-141406-unauthRole",
-            "StackName": "amplify-authcra-dev-141406",
-            "StackId": "arn:aws:cloudformation:us-west-2:041414866712:stack/amplify-authcra-dev-141406/401c3550-e3f3-11ea-8523-0667625073fa",
-            "AmplifyAppId": "d7p8lgwsowbtm"
-        }
-    },
-    "auth": {
-        "cognitocf0c6096": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation",
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-authcra-dev-141406-deployment/amplify-cfn-templates/auth/cognitocf0c6096-cloudformation-template.yml",
-                "logicalId": "authcognitocf0c6096"
-            },
-            "lastPushTimeStamp": "2020-08-21T21:16:04.973Z"
-        }
+  "providers": {
+      "awscloudformation": {
+          "AuthRoleName": "Cognito_ValidatorIdentityPoolAuth_Role",
+          "UnauthRoleArn": "arn:aws:iam::041414866712:role/Cognito_ValidatorIdentityPoolUnauth_Role",
+          "AuthRoleArn": "arn:aws:iam::041414866712:role/Cognito_ValidatorIdentityPoolAuth_Role",
+          "Region": "us-west-2",
+          "DeploymentBucketName": "validator-bucket-amplify",
+          "UnauthRoleName": "Cognito_ValidatorIdentityPoolUnauth_Role",
+          "StackName": "amplify-authcra-dev-141406",
+          "StackId": "arn:aws:cloudformation:us-west-2:041414866712:stack/amplify-authcra-dev-141406/401c3550-e3f3-11ea-8523-0667625073fa",
+          "AmplifyAppId": "d7p8lgwsowbtm"
+      }
+  },
+  "auth": {
+    "cognitocf0c6096": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-authcra-dev-141406-deployment/amplify-cfn-templates/auth/cognitocf0c6096-cloudformation-template.yml",
+        "logicalId": "authcognitocf0c6096"
+      },
+      "lastPushTimeStamp": "2020-09-08T18:04:08.626Z",
+      "output": {
+        "AppClientSecret": "1u5pc36sku1ssueuhdlml1c6iun2d4ir5mqt87eog2s9a4tphkgr",
+        "UserPoolId": "us-west-2_JFo5xm09s",
+        "AppClientIDWeb": "b06130186ksvkp4unvgbrckrp",
+        "AppClientID": "7jjflvgosd7a18ipkph1ho8epm",
+        "IdentityPoolId": "us-west-2:f923ab14-a6aa-4792-8a21-71b5532896f1",
+        "IdentityPoolName": "ValidatorIdentityPool",
+        "UserPoolName": "ValidatorUserPool"
+      },
+      "lastPushDirHash": "VU5CGxar3o1geGKDEzBXzHaw0jw="
     }
+  }
 }
